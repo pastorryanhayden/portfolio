@@ -1,0 +1,66 @@
+@use "../colors";
+@use "../sizing";
+@use "../fonts";
+@use "../typography";
+
+section.expertise {
+position: relative;
+display: grid;
+gap: sizing.$s-6;
+grid-template-columns: repeat(5, 1fr);
+padding: sizing.$s-6 sizing.$s-6;
+
+@media (min-width: 800px){
+	grid-template-columns: 1fr repeat(11, 1fr);
+	padding: sizing.$s-6 0;
+}
+
+h2 {
+	grid-column: 1/-1;
+	@media (min-width: 800px){
+	grid-column: 2/13;
+	}
+}
+
+div.items {
+	grid-column: 1/-1;
+	position: relative;
+	height: 400px;
+	padding: 0 sizing.$s-8;
+	@media (min-width: 800px){
+	grid-column: 2/7;
+	padding: 0 0;
+	}
+	button.prev {
+		position: absolute;
+		left: 0;
+		top: 50%;
+		margin-left: -1rem;
+		@media (min-width: 800px){
+		margin-left: -3rem;
+	}
+	}
+	button.next {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin-right: -1rem;
+		@media (min-width: 800px){
+		margin-right: -3rem;
+	}
+	}
+
+}
+img.venn {
+	display: none;
+	@media (min-width: 800px){
+		display: block;
+	grid-column: 8/12;
+	width: 100%;
+	}
+}
+
+
+}
+
+

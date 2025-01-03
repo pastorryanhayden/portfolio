@@ -1,0 +1,122 @@
+@use "../colors";
+@use "../sizing";
+@use "../fonts";
+@use "../typography";
+@use "../rounding";
+header {
+background: url("../../../public/light-fabric.jpg") 400px/400px  repeat;
+position: relative;
+display: grid;
+gap: sizing.$s-6;
+grid-template-columns: repeat(5, 1fr);
+min-height: 450px;
+padding: sizing.$s-6 sizing.$s-6 0 sizing.$s-6;
+
+@media (min-width: 800px){
+	grid-template-columns: repeat(12, 1fr);
+	padding: 0;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: sizing.$s-6;
+	padding: sizing.$s-6;
+	grid-column: 1/6;
+	@media (min-width: 800px){
+		grid-column: 1/13;
+		// margin-bottom: sizing.$s-12;
+	}
+
+	a {
+		color: colors.$navy;
+		text-decoration: none;
+		font-size: typography.$text-lg;
+		display: inline-flex;
+		align-items: center;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		&.cta {
+			background: colors.$orange;
+			color: #fff;
+			padding: sizing.$s-1 sizing.$s-2;
+			border-radius: rounding.$rounded-md;
+			svg {
+				margin-right: sizing.$s-1;
+			}
+			&:hover {
+				background: colors.$medium-gray;
+				text-decoration: none;
+				color: colors.$navy;
+			}
+
+		}
+		span.mobile-hidden {
+			margin-left: sizing.$s-2;
+		}
+	}
+}
+div.text {
+	grid-column: 1/6;
+	padding-top: sizing.$s-6;
+	@media (min-width: 800px){
+		grid-column: 2/7;
+		padding-bottom: sizing.$s-12;
+	}
+	h1 {
+		font-family: fonts.$accent-font;
+		font-size: typography.$text-6xl;
+		color: colors.$navy;
+	}
+	h3 {
+		font-weight: 500;
+		font-size: typography.$text-xl;
+		color: colors.$navy;
+		span {
+			color: colors.$orange;
+			text-decoration: underline;
+		}
+
+	}
+	a.resume {
+		display: inline-flex;
+		background: colors.$orange;
+		color: #fff;
+		padding: sizing.$s-2 sizing.$s-4;
+		margin-top: sizing.$s-4;
+		font-size: typography.$text-2xl;
+		text-decoration: none;
+		align-items: center;
+		border-radius: rounding.$rounded-md;
+		svg {
+			width: sizing.$s-8;
+			height: sizing.$s-8;
+			margin-right: sizing.$s-2;
+		}
+		&:hover {
+			background: colors.$medium-gray;
+			color: colors.$navy;
+		}
+	}
+	p {
+		margin-top: sizing.$s-2;
+	}
+}
+img {
+	grid-column: 1/6;
+	width: 100%;
+	align-self: end;
+	justify-self: end;
+	max-width: 500px;
+	@media (min-width: 800px){
+		grid-column: 8/13;
+	}
+
+}
+}
+
+

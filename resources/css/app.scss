@@ -1,0 +1,54 @@
+@use "colors";
+@use "sizing";
+@use "fonts";
+@use "typography";
+@import url("./_reset.scss");
+
+* {
+	box-sizing: border-box;
+  font-family: fonts.$main-font;
+}
+
+body {
+	width: 100vw;
+	max-width: 100%;
+  background: #fff; 
+}
+main {
+	width: 100vw;
+	max-width: 100%;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+.mobile-hidden {
+display: none;
+@media (min-width: 800px){
+  display: inherit;
+}
+}
+@import url("./components/_hero.scss");
+@import url("./components/_experience.scss");
+@import url("./components/_expertise.scss");
+
+h2 {
+  color: colors.$orange;
+  display: inline-flex;
+  align-items: center;
+  font-family: fonts.$accent-font;
+  font-size: typography.$text-3xl;
+
+  svg {
+    width: sizing.$s-8;
+    height: sizing.$s-8;
+    
+  }
+}
