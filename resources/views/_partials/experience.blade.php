@@ -2,7 +2,7 @@
 <h2><x-tabler-tie />Experience</h2>
 <div class="items">
 <article>
-	<p>Lead 50+ software projects over a period of 20 years as a product founder, agency founder, and freelancer.</p>
+	<p>Led 50+ software projects over a period of 20 years as a product founder, agency founder, and freelancer.</p>
 	<img src="/led.png" alt="Ryan leading a client design sprint in a cattle yard in California."/>
 </article>
 <article>

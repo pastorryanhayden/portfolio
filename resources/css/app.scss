@@ -38,6 +38,7 @@ display: none;
 @import url("./components/_hero.scss");
 @import url("./components/_experience.scss");
 @import url("./components/_expertise.scss");
+@import url("./components/_case-studies-home.scss");
 
 h2 {
   color: colors.$orange;
@@ -51,4 +52,13 @@ h2 {
     height: sizing.$s-8;
     
   }
+}
+.transition {
+  transition-property: transform, opacity, visibility;
+  transition-timing-function: ease-in-out;
+  transition-duration: 300ms;
+}
+
+.transform {
+  transform-origin: center;
 }

@@ -22,6 +22,7 @@
     <main>
         @include('_partials.experience')
         @include('_partials.expertise')
+        <x-case-studies />
     </main>
 </body>
 

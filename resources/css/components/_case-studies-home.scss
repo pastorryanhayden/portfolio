@@ -1,0 +1,47 @@
+@use "../colors";
+@use "../sizing";
+@use "../fonts";
+@use "../typography";
+section.case-studies {
+background: url("../../../public/dot-grid.jpeg") 400px/400px  repeat;
+position: relative;
+display: grid;
+gap: sizing.$s-6;
+grid-template-columns: repeat(5, 1fr);
+padding: sizing.$s-6 sizing.$s-6;
+border-top: 1px solid colors.$medium-gray;
+border-bottom: 1px solid colors.$medium-gray;
+
+@media (min-width: 800px){
+	grid-template-columns: 1fr repeat(11, 1fr);
+	padding: sizing.$s-6 0;
+}
+
+h2 {
+	grid-column: 1/-1;
+	@media (min-width: 800px){
+	grid-column: 2/13;
+	}
+}
+
+div.items {
+	grid-column: 1/-1;
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: sizing.$s-6;
+	@media (min-width: 800px){
+	grid-column: 2/12;
+	grid-template-columns: repeat(3, 1fr);
+	}
+	a {
+		display: flex;
+		flex-direction: column;
+		border: 1px solid colors.$medium-gray;
+		background: colors.$orange;
+		height: sizing.$s-64;
+	}
+}
+
+
+
+}

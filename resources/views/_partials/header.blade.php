@@ -1,5 +1,5 @@
 <header>
-    @include('_partials.nav')
+    <x-navigation />
     <div class="text">
         <h1>Ryan Hayden</h1>
         <h3>Experienced <span>software generalist</span> looking<br>
