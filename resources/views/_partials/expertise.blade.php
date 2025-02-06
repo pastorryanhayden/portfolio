@@ -45,7 +45,7 @@
 			<h3>Project Managment</h3>
 			<ul>
 				<li><x-tabler-brand-trello />Introduced Scrum to my team and acted as Product Owner for dozens of projects.</li>
-				<li><x-tabler-brand-trello />Over 10 years experience with PM tools like Clickup, Mondaay, Basecamp, Jira, and Github Projects.</li>
+				<li><x-tabler-brand-trello />Over 10 years experience with PM tools like Clickup, Monday, Basecamp, Jira, and Github Projects.</li>
 				<li><x-tabler-brand-trello />Familiarity with Scrum, Kanban, and Waterfall PM methodoligies.</li>
 				<li><x-tabler-brand-trello />Certified Scrum Project Owner (CSPO)</li>
 			</ul>
@@ -57,6 +57,7 @@
 				<li><x-tabler-terminal-2 /> 20+ years of experience with HTML/CSS/JS.</li>
 				<li><x-tabler-terminal-2 />Extensive experience building web apps with the Laravel framework (PHP).</li>
 				<li><x-tabler-terminal-2 />Additional experience with Vue, React, Firebase, Nodejs, and Hotwire.</li>
+				<li><x-tabler-terminal-2 />Experience with many CSS libraries including Tailwind, Bootstrap, Zurb Foundation and plain old CSS.</li>
 				<li><x-tabler-terminal-2 />Experience with cloud deployment technologies (AWS, Digital Ocean, Kubernetes, CI/CD Pipelines).</li>
 			</ul>
 		</article>
